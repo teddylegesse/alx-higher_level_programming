@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-import string
-for alpha_letters in string.ascii_lowercase:
-       print(alpha_letters, end="")
+for i in range(97, 123):
+    print("{:c}".format(i), end="")
