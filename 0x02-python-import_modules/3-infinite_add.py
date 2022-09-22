@@ -2,11 +2,11 @@
 from sys import argv
 
 if __name__ == "__main__":
-    num = len(argv) - 1
-    if num == 0:
-        print("{}".format(num))
+    arg_num = len(argv) - 1
+    if arg_num == 0:
+        print("{}".format(arg_num))
     else:
         result = []
-        for i in range(1, num + 1):
+        for i in range(1, arg_num + 1):
             result.append(int(argv[i]))
-        print("{}".format(sum(result))
+        print("{}".format(sum(result)))
