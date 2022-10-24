@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-"""Class MyInt that inherits from int"""
+"""
+Contains definition of class MyInt
+"""
 
 
 class MyInt(int):
     """Definition of class MyInt that inherits from class int"""
 
-    def __eq__(self, value):
+    def __eq__(self, other):
         """Overrides equals, inverting it"""
-        return self.real != value
+        return int(self) != int(other)
 
-    def __ne__(self, value):
+    def __ne__(self, other):
         """Overrides not-equals, inverting it"""
-        return self.real == valu
+        return int(self) == int(
