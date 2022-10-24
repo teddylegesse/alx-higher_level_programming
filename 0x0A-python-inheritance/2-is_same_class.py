@@ -3,9 +3,14 @@
 Module for is_same_class method
 """
 
+
 def is_same_class(obj, a_class):
-    """ Check if is a same class: return TRUE"""
+    """Determines if an object is exactly an instance of a class.
+    Args:
+        obj (unknown): object whose type is to be checked.
+        a_class (str): class criteria to validate.
+    """
+
     if type(obj) == a_class:
         return True
-    else:
-        return False
+    return False
